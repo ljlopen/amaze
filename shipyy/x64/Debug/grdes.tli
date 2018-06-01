@@ -1,0 +1,592 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.12.25831.0 (986e3269).
+//
+// f:\w\vs2017\amaze\shipyy\x64\debug\grdes.tli
+//
+// Wrapper implementations for Win32 type library ..\grdes.tlb
+// compiler-generated file created 06/01/18 at 12:40:01 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _IGRDesignerEvents wrapper method implementations
+//
+
+inline HRESULT _IGRDesignerEvents::LayoutPanelContextMenu ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::InspectorContextMenu ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::ExplorerContextMenu ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::InspectorChange ( ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::DataChange ( ) {
+    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::OpenReport ( ) {
+    return _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::SaveReport ( ) {
+    return _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IGRDesignerEvents::BeforeDoAction ( GRDesignerAction Action ) {
+    return _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003", Action);
+}
+
+inline HRESULT _IGRDesignerEvents::RequestData ( IDispatch * Report ) {
+    return _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", Report);
+}
+
+//
+// interface IGRDesigner wrapper method implementations
+//
+
+inline IDispatchPtr IGRDesigner::GetReport ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Report(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IGRDesigner::PutReport ( IDispatch * pVal ) {
+    HRESULT _hr = put_Report(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetDirty ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Dirty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutDirty ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Dirty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IGRDesigner::GetDesignGridColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_DesignGridColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutDesignGridColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_DesignGridColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IGRDesigner::GetDesignEdgeColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_DesignEdgeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutDesignEdgeColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_DesignEdgeColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetAsFormUI ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AsFormUI(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutAsFormUI ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AsFormUI(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetAsDetailGridWidth ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AsDetailGridWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutAsDetailGridWidth ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AsDetailGridWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetViewFloatSection ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ViewFloatSection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutViewFloatSection ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ViewFloatSection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetAutoSaveOnView ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AutoSaveOnView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutAutoSaveOnView ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoSaveOnView(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetIsBlank ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsBlank(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetIsInsertingControl ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_IsInsertingControl(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IGRDesigner::GetDesigningSubReportName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DesigningSubReportName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IGRDesigner::PutDefaultAction ( VARIANT_BOOL _arg1 ) {
+    HRESULT _hr = put_DefaultAction(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IGRDesigner::GetPrintViewer ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_PrintViewer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr IGRDesigner::GetDisplayViewer ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_DisplayViewer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline VARIANT_BOOL IGRDesigner::GetShowToolbar ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowToolbar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutShowToolbar ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowToolbar(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetShowExplorer ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowExplorer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutShowExplorer ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowExplorer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetShowInspector ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_ShowInspector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutShowInspector ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowInspector(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetOnlyLayout ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_OnlyLayout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutOnlyLayout ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_OnlyLayout(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetEnableQuickEdit ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_EnableQuickEdit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutEnableQuickEdit ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_EnableQuickEdit(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IGRDesigner::GetAsNativeUI ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AsNativeUI(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutAsNativeUI ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AsNativeUI(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned long IGRDesigner::GetOptions ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_Options(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutOptions ( unsigned long pVal ) {
+    HRESULT _hr = put_Options(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned long IGRDesigner::GetPublished ( ) {
+    unsigned long _result = 0;
+    HRESULT _hr = get_Published(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutPublished ( unsigned long pVal ) {
+    HRESULT _hr = put_Published(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline GRDesignerWindowLayout IGRDesigner::GetWindowLayout ( ) {
+    GRDesignerWindowLayout _result;
+    HRESULT _hr = get_WindowLayout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutWindowLayout ( GRDesignerWindowLayout pVal ) {
+    HRESULT _hr = put_WindowLayout(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline GRDesignerViewMode IGRDesigner::GetViewMode ( ) {
+    GRDesignerViewMode _result;
+    HRESULT _hr = get_ViewMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutViewMode ( GRDesignerViewMode pVal ) {
+    HRESULT _hr = put_ViewMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline GRDesignerViewStyle IGRDesigner::GetViewStyle ( ) {
+    GRDesignerViewStyle _result;
+    HRESULT _hr = get_ViewStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutViewStyle ( GRDesignerViewStyle pVal ) {
+    HRESULT _hr = put_ViewStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IGRDesigner::GetZoomPercent ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ZoomPercent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IGRDesigner::PutZoomPercent ( double pVal ) {
+    HRESULT _hr = put_ZoomPercent(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IGRDesigner::Post ( ) {
+    HRESULT _hr = raw_Post();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::Reload ( ) {
+    HRESULT _hr = raw_Reload();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::PrepareInsertControl ( long ControlType ) {
+    HRESULT _hr = raw_PrepareInsertControl(ControlType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::CancelInsertControl ( ) {
+    HRESULT _hr = raw_CancelInsertControl();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::DoAction ( GRDesignerAction Action ) {
+    HRESULT _hr = raw_DoAction(Action);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGRDesigner::IsActionEnabled ( GRDesignerAction Action ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsActionEnabled(Action, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::IsInsertControlEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsInsertControlEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IGRDesigner::PrepareInsertControl2 ( long ControlType, _bstr_t DefaultValues ) {
+    HRESULT _hr = raw_PrepareInsertControl2(ControlType, DefaultValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::UpdateLanguage ( ) {
+    HRESULT _hr = raw_UpdateLanguage();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::UpdateUI ( ) {
+    HRESULT _hr = raw_UpdateUI();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetOptionValue ( GRDesignerOption Option ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetOptionValue(Option, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IGRDesigner::SetOptionValue ( GRDesignerOption Option, VARIANT_BOOL newVal ) {
+    HRESULT _hr = raw_SetOptionValue(Option, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::EnableAllOptions ( ) {
+    HRESULT _hr = raw_EnableAllOptions();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::DisableAllOptions ( ) {
+    HRESULT _hr = raw_DisableAllOptions();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetPublishedValue ( GRPropertyCategory PropertyCategory ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetPublishedValue(PropertyCategory, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IGRDesigner::SetPublishedValue ( GRPropertyCategory PropertyCategory, VARIANT_BOOL newVal ) {
+    HRESULT _hr = raw_SetPublishedValue(PropertyCategory, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::EnableAllPublished ( ) {
+    HRESULT _hr = raw_EnableAllPublished();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::DisableAllPublished ( ) {
+    HRESULT _hr = raw_DisableAllPublished();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::ShowClassProperty ( _bstr_t ClassName, VARIANT_BOOL IsShow ) {
+    HRESULT _hr = raw_ShowClassProperty(ClassName, IsShow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::ShowOneProperty ( _bstr_t ClassName, _bstr_t PropertyName, VARIANT_BOOL IsShow ) {
+    HRESULT _hr = raw_ShowOneProperty(ClassName, PropertyName, IsShow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IGRDesigner::GetObjectFontName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetObjectFontName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IGRDesigner::SetObjectFontName ( _bstr_t FontName ) {
+    HRESULT _hr = raw_SetObjectFontName(FontName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double IGRDesigner::GetObjectFontPoint ( ) {
+    double _result = 0;
+    HRESULT _hr = raw_GetObjectFontPoint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IGRDesigner::SetObjectFontPoint ( double FontPoint ) {
+    HRESULT _hr = raw_SetObjectFontPoint(FontPoint);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetObjectFontBold ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetObjectFontBold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetObjectFontItalic ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetObjectFontItalic(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetObjectFontUnderline ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetObjectFontUnderline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::GetObjectFontStrikethrough ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetObjectFontStrikethrough(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::IsSetObjectFontEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsSetObjectFontEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IGRDesigner::SetObjectForeColor ( OLE_COLOR FontColor ) {
+    HRESULT _hr = raw_SetObjectForeColor(FontColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::SetObjectBackColor ( OLE_COLOR BackColor ) {
+    HRESULT _hr = raw_SetObjectBackColor(BackColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IGRDesigner::IsSetObjectForeColorEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsSetObjectForeColorEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IGRDesigner::IsSetObjectBackColorEnabled ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsSetObjectBackColorEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGRDesigner::GetObjectTextAlign ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetObjectTextAlign(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGRDesigner::GetObjectTextOrientation ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetObjectTextOrientation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IGRDesigner::GetObjectCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetObjectCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline GRSelectionObjectType IGRDesigner::GetObjectType ( ) {
+    GRSelectionObjectType _result;
+    HRESULT _hr = raw_GetObjectType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IGRDesigner::GetObjectName ( long Index ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetObjectName(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IGRDesigner::_Fire_SubReportRequestData ( IDispatch * pReport ) {
+    HRESULT _hr = raw__Fire_SubReportRequestData(pReport);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IGRDesigner::EnterSubReport ( _bstr_t SubReportName ) {
+    HRESULT _hr = raw_EnterSubReport(SubReportName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

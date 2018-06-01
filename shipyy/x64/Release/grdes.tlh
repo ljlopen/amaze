@@ -1,0 +1,672 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.12.25831.0 (342dc242).
+//
+// f:\w\vs2017\amaze\shipyy\x64\release\grdes.tlh
+//
+// C++ source equivalent of Win32 type library ..\grdes.tlb
+// compiler-generated file created 06/01/18 at 13:13:44 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("c5a16330-a084-48c9-bc0f-0d0b37a14123"))
+/* LIBID */ __grdes6Lib;
+struct __declspec(uuid("b89f92f4-5e58-413e-8e73-4a0b28b9e9bf"))
+/* dispinterface */ _IGRDesignerEvents;
+enum tagGRDesignerAction;
+struct /* coclass */ GRDesigner;
+struct __declspec(uuid("283cdc73-0d7c-4cd9-9fe1-75b7919ef89a"))
+/* dual interface */ IGRDesigner;
+enum tagGRDesignerWindowLayout;
+enum tagGRDesignerViewMode;
+enum tagGRDesignerViewStyle;
+enum tagGRDesignerOption;
+enum tagGRPropertyCategory;
+enum tagGRSelectionObjectType;
+struct /* coclass */ DesignerProps;
+typedef enum tagGRDesignerAction GRDesignerAction;
+typedef enum tagGRDesignerWindowLayout GRDesignerWindowLayout;
+typedef enum tagGRDesignerViewMode GRDesignerViewMode;
+typedef enum tagGRDesignerViewStyle GRDesignerViewStyle;
+typedef enum tagGRDesignerOption GRDesignerOption;
+typedef enum tagGRPropertyCategory GRPropertyCategory;
+typedef enum tagGRSelectionObjectType GRSelectionObjectType;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IGRDesignerEvents, __uuidof(_IGRDesignerEvents));
+_COM_SMARTPTR_TYPEDEF(IGRDesigner, __uuidof(IGRDesigner));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("b89f92f4-5e58-413e-8e73-4a0b28b9e9bf"))
+_IGRDesignerEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT LayoutPanelContextMenu ( );
+    HRESULT InspectorContextMenu ( );
+    HRESULT ExplorerContextMenu ( );
+    HRESULT InspectorChange ( );
+    HRESULT DataChange ( );
+    HRESULT OpenReport ( );
+    HRESULT SaveReport ( );
+    HRESULT BeforeDoAction (
+        GRDesignerAction Action );
+    HRESULT RequestData (
+        IDispatch * Report );
+};
+
+enum tagGRDesignerAction
+{
+    grdaEditUndo = 101,
+    grdaEditRedo = 102,
+    grdaEditCut = 103,
+    grdaEditPaste = 104,
+    grdaEditCopy = 105,
+    grdaEditDelete = 106,
+    grdaEditSelectAll = 107,
+    grdaAutoSizeControl = 201,
+    grdaAutoGenColumn = 202,
+    grdaSectionMoveUp = 204,
+    grdaSectionMoveDown = 205,
+    grdaAutoGenParameter = 206,
+    grdaSetupDBQuery = 302,
+    grdaAutoGenField = 203,
+    grdaSetupParamDBQuery = 310,
+    grdaSetupRecordsetDBQuery = 311,
+    grdaAutoGenRecordsetField = 207,
+    grdaReportPaperSetting = 301,
+    grdaReportParameterCollection = 303,
+    grdaReportGroupCollection = 304,
+    grdaReportColumnCollection = 305,
+    grdaReportFieldCollection = 306,
+    grdaReportColumnTitleLayout = 307,
+    grdaBrowseScriptCode = 308,
+    grdaExitSubReportDesign = 309,
+    grdaZoomSetting = 313,
+    grdaFreeGridCellMerge = 351,
+    grdaFreeGridCellSplit = 352,
+    grdaFreeGridColumnInsertLeft = 353,
+    grdaFreeGridColumnInsertRight = 354,
+    grdaFreeGridColumnMoveLeft = 355,
+    grdaFreeGridColumnMoveRight = 356,
+    grdaFreeGridColumnMoveTo = 357,
+    grdaFreeGridRowInsertUp = 358,
+    grdaFreeGridRowInsertDown = 359,
+    grdaFreeGridRowMoveUp = 360,
+    grdaFreeGridRowMoveDown = 361,
+    grdaFreeGridRowMoveTo = 362,
+    grdaFreeGridColumnDelete = 363,
+    grdaFreeGridRowDelete = 364,
+    grdaFreeGridSectionAutoHeight = 370,
+    grdaInsertReportHeader = 401,
+    grdaInsertReportFooter = 402,
+    grdaInsertPageHeader = 403,
+    grdaInsertPageFooter = 404,
+    grdaInsertDetailGrid = 405,
+    grdaInsertGroup = 406,
+    grdaInsertField = 407,
+    grdaInsertColumn = 408,
+    grdaInsertParameter = 409,
+    grdaFormatAlignLeft = 501,
+    grdaFormatAlignRight = 502,
+    grdaFormatAlignCenter = 503,
+    grdaFormatAlignTop = 504,
+    grdaFormatAlignMiddle = 505,
+    grdaFormatAlignBottom = 506,
+    grdaFormatAlignToGrid = 507,
+    grdaFormatSizeSameWidth = 508,
+    grdaFormatSizeSameHeight = 509,
+    grdaFormatSizeSameBoth = 510,
+    grdaFormatSizeToGrid = 511,
+    grdaFormatSpaceEquallyVertical = 512,
+    grdaFormatSpaceIncreaseVertical = 513,
+    grdaFormatSpaceDecreaseVertical = 514,
+    grdaFormatSpaceEquallyHorizontal = 515,
+    grdaFormatSpaceIncreaseHorizontal = 516,
+    grdaFormatSpaceDecreaseHorizontal = 517,
+    grdaFormatSpaceRemoveHorizontal = 518,
+    grdaFormatSpaceRemoveVertical = 519,
+    grdaFormatOrderBringToFront = 520,
+    grdaFormatOrderSendToBack = 521,
+    grdaFormatFontStrikethrough = 600,
+    grdaFormatFontBold = 601,
+    grdaFormatFontItalic = 602,
+    grdaFormatFontUnderline = 603,
+    grdaFormatTextAlignTopLeft = 604,
+    grdaFormatTextAlignTopCenter = 605,
+    grdaFormatTextAlignTopRight = 606,
+    grdaFormatTextAlignMiddleLeft = 607,
+    grdaFormatTextAlignMiddleCenter = 608,
+    grdaFormatTextAlignMiddleRight = 609,
+    grdaFormatTextAlignBottomLeft = 610,
+    grdaFormatTextAlignBottomCenter = 611,
+    grdaFormatTextAlignBottomRight = 612,
+    grdaFormatTextAlignLeft = 621,
+    grdaFormatTextAlignCenter = 622,
+    grdaFormatTextAlignRight = 623,
+    grdaFormatTextAlignJustify = 624,
+    grdaFormatTextAlignTop = 625,
+    grdaFormatTextAlignMiddle = 626,
+    grdaFormatTextAlignBottom = 627,
+    grdaFormatTextOrientationDefault = 613,
+    grdaFormatTextOrientationU2DL2R0 = 614,
+    grdaFormatTextOrientationD2UL2R1 = 615,
+    grdaFormatTextOrientationU2DR2L0 = 616,
+    grdaFormatTextOrientationU2DR2L1 = 617,
+    grdaFormatTextOrientationInvert = 618,
+    grdaFormatTextOrientationL2RD2U0 = 619,
+    grdaFormatTextOrientationL2RD2U1 = 620
+};
+
+struct __declspec(uuid("6edd80cb-9f08-4c71-b406-479e5cb80fce"))
+GRDesigner;
+    // [ default ] interface IGRDesigner
+    // [ default, source ] dispinterface _IGRDesignerEvents
+
+enum tagGRDesignerWindowLayout
+{
+    grdwlLayoutAtLeft = 1,
+    grdwlLayoutAtRight = 2
+};
+
+enum tagGRDesignerViewMode
+{
+    grvmInNormalDesign = 1,
+    grvmInPageDesign = 2,
+    grvmInPrint = 4,
+    grvmInDisplay = 8,
+    grvmInScript = 16
+};
+
+enum tagGRDesignerViewStyle
+{
+    grvsOnlyNormal = 1,
+    grvsOnlyPage = 2,
+    grvsNormalPage = 3,
+    grvsNomalPrint = 5,
+    grvsNomalPrintDisplay = 13,
+    grvsPagePrint = 6,
+    grvsPagePrintDisplay = 14,
+    grvsNomalPagePrint = 7,
+    grvsNomalPagePrintDisplay = 15
+};
+
+enum tagGRDesignerOption
+{
+    grdoShowRuler = 1,
+    grdoCanPopupMenu = 2,
+    grdoShowInspector = 4,
+    grdoShowInspectorObjectPicker = 8,
+    grdoShowExplorer = 16,
+    grdoShowToolbar = 32,
+    grdoShowSectionLine = 256,
+    grdoShowMarginLine = 512,
+    grdoCanResizeSection = 1024,
+    grdoCanChangeMargin = 2048,
+    grdoCanDeleteObject = 4096,
+    grdoEnableQuickEdit = 8192,
+    grdoAutoExpandReportTree = 16384,
+    grdoLockPropertyEditable = 32768,
+    grdoShowDetailGridToolbar = 16777216,
+    grdoShowDetailGridColumnRuler = 33554432,
+    grdoCanModifyDBSettings = 67108864,
+    grdoShowDBConnectionString = 134217728,
+    grdoShowDTCollectionBtns = 1048576,
+    grdoCanAutoGenFields = 2097152,
+    grdoCanAutoGenColumns = 4194304,
+    grdoCanAutoGenParameters = 8388608
+};
+
+enum tagGRPropertyCategory
+{
+    grpcDesign = 1,
+    grpcLayout = 2,
+    grpcAppearance = 4,
+    grpcData = 8,
+    grpcAction = 16,
+    grpcScript = 32,
+    grpcMisc = 2048
+};
+
+struct __declspec(uuid("283cdc73-0d7c-4cd9-9fe1-75b7919ef89a"))
+IGRDesigner : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetViewMode,put=PutViewMode))
+    GRDesignerViewMode ViewMode;
+    __declspec(property(get=GetReport,put=PutReport))
+    IDispatchPtr Report;
+    __declspec(property(get=GetDirty,put=PutDirty))
+    VARIANT_BOOL Dirty;
+    __declspec(property(get=GetDesignGridColor,put=PutDesignGridColor))
+    OLE_COLOR DesignGridColor;
+    __declspec(property(get=GetDesignEdgeColor,put=PutDesignEdgeColor))
+    OLE_COLOR DesignEdgeColor;
+    __declspec(property(get=GetAsFormUI,put=PutAsFormUI))
+    VARIANT_BOOL AsFormUI;
+    __declspec(property(get=GetAsDetailGridWidth,put=PutAsDetailGridWidth))
+    VARIANT_BOOL AsDetailGridWidth;
+    __declspec(property(get=GetViewFloatSection,put=PutViewFloatSection))
+    VARIANT_BOOL ViewFloatSection;
+    __declspec(property(get=GetAutoSaveOnView,put=PutAutoSaveOnView))
+    VARIANT_BOOL AutoSaveOnView;
+    __declspec(property(get=GetViewStyle,put=PutViewStyle))
+    GRDesignerViewStyle ViewStyle;
+    __declspec(property(get=GetZoomPercent,put=PutZoomPercent))
+    double ZoomPercent;
+    __declspec(property(get=GetIsBlank))
+    VARIANT_BOOL IsBlank;
+    __declspec(property(get=GetIsInsertingControl))
+    VARIANT_BOOL IsInsertingControl;
+    __declspec(property(get=GetDesigningSubReportName))
+    _bstr_t DesigningSubReportName;
+    __declspec(property(put=PutDefaultAction))
+    VARIANT_BOOL DefaultAction;
+    __declspec(property(get=GetPrintViewer))
+    IDispatchPtr PrintViewer;
+    __declspec(property(get=GetDisplayViewer))
+    IDispatchPtr DisplayViewer;
+    __declspec(property(get=GetShowExplorer,put=PutShowExplorer))
+    VARIANT_BOOL ShowExplorer;
+    __declspec(property(get=GetShowInspector,put=PutShowInspector))
+    VARIANT_BOOL ShowInspector;
+    __declspec(property(get=GetOnlyLayout,put=PutOnlyLayout))
+    VARIANT_BOOL OnlyLayout;
+    __declspec(property(get=GetAsNativeUI,put=PutAsNativeUI))
+    VARIANT_BOOL AsNativeUI;
+    __declspec(property(get=GetOptions,put=PutOptions))
+    unsigned long Options;
+    __declspec(property(get=GetPublished,put=PutPublished))
+    unsigned long Published;
+    __declspec(property(get=GetWindowLayout,put=PutWindowLayout))
+    GRDesignerWindowLayout WindowLayout;
+    __declspec(property(get=GetShowToolbar,put=PutShowToolbar))
+    VARIANT_BOOL ShowToolbar;
+    __declspec(property(get=GetEnableQuickEdit,put=PutEnableQuickEdit))
+    VARIANT_BOOL EnableQuickEdit;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetReport ( );
+    void PutReport (
+        IDispatch * pVal );
+    VARIANT_BOOL GetDirty ( );
+    void PutDirty (
+        VARIANT_BOOL pVal );
+    OLE_COLOR GetDesignGridColor ( );
+    void PutDesignGridColor (
+        OLE_COLOR pVal );
+    OLE_COLOR GetDesignEdgeColor ( );
+    void PutDesignEdgeColor (
+        OLE_COLOR pVal );
+    VARIANT_BOOL GetAsFormUI ( );
+    void PutAsFormUI (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAsDetailGridWidth ( );
+    void PutAsDetailGridWidth (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetViewFloatSection ( );
+    void PutViewFloatSection (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAutoSaveOnView ( );
+    void PutAutoSaveOnView (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsBlank ( );
+    VARIANT_BOOL GetIsInsertingControl ( );
+    _bstr_t GetDesigningSubReportName ( );
+    void PutDefaultAction (
+        VARIANT_BOOL _arg1 );
+    IDispatchPtr GetPrintViewer ( );
+    IDispatchPtr GetDisplayViewer ( );
+    VARIANT_BOOL GetShowToolbar ( );
+    void PutShowToolbar (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetShowExplorer ( );
+    void PutShowExplorer (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetShowInspector ( );
+    void PutShowInspector (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetOnlyLayout ( );
+    void PutOnlyLayout (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetEnableQuickEdit ( );
+    void PutEnableQuickEdit (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetAsNativeUI ( );
+    void PutAsNativeUI (
+        VARIANT_BOOL pVal );
+    unsigned long GetOptions ( );
+    void PutOptions (
+        unsigned long pVal );
+    unsigned long GetPublished ( );
+    void PutPublished (
+        unsigned long pVal );
+    GRDesignerWindowLayout GetWindowLayout ( );
+    void PutWindowLayout (
+        GRDesignerWindowLayout pVal );
+    GRDesignerViewMode GetViewMode ( );
+    void PutViewMode (
+        GRDesignerViewMode pVal );
+    GRDesignerViewStyle GetViewStyle ( );
+    void PutViewStyle (
+        GRDesignerViewStyle pVal );
+    double GetZoomPercent ( );
+    void PutZoomPercent (
+        double pVal );
+    HRESULT Post ( );
+    HRESULT Reload ( );
+    HRESULT PrepareInsertControl (
+        long ControlType );
+    HRESULT CancelInsertControl ( );
+    HRESULT DoAction (
+        GRDesignerAction Action );
+    VARIANT_BOOL IsActionEnabled (
+        GRDesignerAction Action );
+    VARIANT_BOOL IsInsertControlEnabled ( );
+    HRESULT PrepareInsertControl2 (
+        long ControlType,
+        _bstr_t DefaultValues );
+    HRESULT UpdateLanguage ( );
+    HRESULT UpdateUI ( );
+    VARIANT_BOOL GetOptionValue (
+        GRDesignerOption Option );
+    HRESULT SetOptionValue (
+        GRDesignerOption Option,
+        VARIANT_BOOL newVal );
+    HRESULT EnableAllOptions ( );
+    HRESULT DisableAllOptions ( );
+    VARIANT_BOOL GetPublishedValue (
+        GRPropertyCategory PropertyCategory );
+    HRESULT SetPublishedValue (
+        GRPropertyCategory PropertyCategory,
+        VARIANT_BOOL newVal );
+    HRESULT EnableAllPublished ( );
+    HRESULT DisableAllPublished ( );
+    HRESULT ShowClassProperty (
+        _bstr_t ClassName,
+        VARIANT_BOOL IsShow );
+    HRESULT ShowOneProperty (
+        _bstr_t ClassName,
+        _bstr_t PropertyName,
+        VARIANT_BOOL IsShow );
+    _bstr_t GetObjectFontName ( );
+    HRESULT SetObjectFontName (
+        _bstr_t FontName );
+    double GetObjectFontPoint ( );
+    HRESULT SetObjectFontPoint (
+        double FontPoint );
+    VARIANT_BOOL GetObjectFontBold ( );
+    VARIANT_BOOL GetObjectFontItalic ( );
+    VARIANT_BOOL GetObjectFontUnderline ( );
+    VARIANT_BOOL GetObjectFontStrikethrough ( );
+    VARIANT_BOOL IsSetObjectFontEnabled ( );
+    HRESULT SetObjectForeColor (
+        OLE_COLOR FontColor );
+    HRESULT SetObjectBackColor (
+        OLE_COLOR BackColor );
+    VARIANT_BOOL IsSetObjectForeColorEnabled ( );
+    VARIANT_BOOL IsSetObjectBackColorEnabled ( );
+    long GetObjectTextAlign ( );
+    long GetObjectTextOrientation ( );
+    long GetObjectCount ( );
+    GRSelectionObjectType GetObjectType ( );
+    _bstr_t GetObjectName (
+        long Index );
+    HRESULT _Fire_SubReportRequestData (
+        IDispatch * pReport );
+    HRESULT EnterSubReport (
+        _bstr_t SubReportName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Report (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Report (
+        /*[in]*/ IDispatch * pVal ) = 0;
+      virtual HRESULT __stdcall get_Dirty (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Dirty (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_DesignGridColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DesignGridColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_DesignEdgeColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DesignEdgeColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_AsFormUI (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AsFormUI (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AsDetailGridWidth (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AsDetailGridWidth (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewFloatSection (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ViewFloatSection (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoSaveOnView (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSaveOnView (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_IsBlank (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsInsertingControl (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_DesigningSubReportName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultAction (
+        /*[in]*/ VARIANT_BOOL _arg1 ) = 0;
+      virtual HRESULT __stdcall get_PrintViewer (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall get_DisplayViewer (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall get_ShowToolbar (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowToolbar (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ShowExplorer (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowExplorer (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ShowInspector (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowInspector (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_OnlyLayout (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_OnlyLayout (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_EnableQuickEdit (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_EnableQuickEdit (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AsNativeUI (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AsNativeUI (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Options (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Options (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_Published (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Published (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_WindowLayout (
+        /*[out,retval]*/ GRDesignerWindowLayout * pVal ) = 0;
+      virtual HRESULT __stdcall put_WindowLayout (
+        /*[in]*/ GRDesignerWindowLayout pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewMode (
+        /*[out,retval]*/ GRDesignerViewMode * pVal ) = 0;
+      virtual HRESULT __stdcall put_ViewMode (
+        /*[in]*/ GRDesignerViewMode pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewStyle (
+        /*[out,retval]*/ GRDesignerViewStyle * pVal ) = 0;
+      virtual HRESULT __stdcall put_ViewStyle (
+        /*[in]*/ GRDesignerViewStyle pVal ) = 0;
+      virtual HRESULT __stdcall get_ZoomPercent (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ZoomPercent (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_Post ( ) = 0;
+      virtual HRESULT __stdcall raw_Reload ( ) = 0;
+      virtual HRESULT __stdcall raw_PrepareInsertControl (
+        /*[in]*/ long ControlType ) = 0;
+      virtual HRESULT __stdcall raw_CancelInsertControl ( ) = 0;
+      virtual HRESULT __stdcall raw_DoAction (
+        /*[in]*/ GRDesignerAction Action ) = 0;
+      virtual HRESULT __stdcall raw_IsActionEnabled (
+        /*[in]*/ GRDesignerAction Action,
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall raw_IsInsertControlEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall raw_PrepareInsertControl2 (
+        /*[in]*/ long ControlType,
+        /*[in]*/ BSTR DefaultValues ) = 0;
+      virtual HRESULT __stdcall raw_UpdateLanguage ( ) = 0;
+      virtual HRESULT __stdcall raw_UpdateUI ( ) = 0;
+      virtual HRESULT __stdcall raw_GetOptionValue (
+        /*[in]*/ GRDesignerOption Option,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetOptionValue (
+        /*[in]*/ GRDesignerOption Option,
+        /*[in]*/ VARIANT_BOOL newVal ) = 0;
+      virtual HRESULT __stdcall raw_EnableAllOptions ( ) = 0;
+      virtual HRESULT __stdcall raw_DisableAllOptions ( ) = 0;
+      virtual HRESULT __stdcall raw_GetPublishedValue (
+        /*[in]*/ GRPropertyCategory PropertyCategory,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetPublishedValue (
+        /*[in]*/ GRPropertyCategory PropertyCategory,
+        /*[in]*/ VARIANT_BOOL newVal ) = 0;
+      virtual HRESULT __stdcall raw_EnableAllPublished ( ) = 0;
+      virtual HRESULT __stdcall raw_DisableAllPublished ( ) = 0;
+      virtual HRESULT __stdcall raw_ShowClassProperty (
+        /*[in]*/ BSTR ClassName,
+        /*[in]*/ VARIANT_BOOL IsShow ) = 0;
+      virtual HRESULT __stdcall raw_ShowOneProperty (
+        /*[in]*/ BSTR ClassName,
+        /*[in]*/ BSTR PropertyName,
+        /*[in]*/ VARIANT_BOOL IsShow ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontName (
+        /*[out,retval]*/ BSTR * pFontName ) = 0;
+      virtual HRESULT __stdcall raw_SetObjectFontName (
+        /*[in]*/ BSTR FontName ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontPoint (
+        /*[out,retval]*/ double * pFontPoint ) = 0;
+      virtual HRESULT __stdcall raw_SetObjectFontPoint (
+        /*[in]*/ double FontPoint ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontBold (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontItalic (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontUnderline (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectFontStrikethrough (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_IsSetObjectFontEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall raw_SetObjectForeColor (
+        /*[in]*/ OLE_COLOR FontColor ) = 0;
+      virtual HRESULT __stdcall raw_SetObjectBackColor (
+        /*[in]*/ OLE_COLOR BackColor ) = 0;
+      virtual HRESULT __stdcall raw_IsSetObjectForeColorEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall raw_IsSetObjectBackColorEnabled (
+        /*[out,retval]*/ VARIANT_BOOL * pEnabled ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectTextAlign (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectTextOrientation (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectType (
+        /*[out,retval]*/ GRSelectionObjectType * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetObjectName (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw__Fire_SubReportRequestData (
+        /*[in]*/ IDispatch * pReport ) = 0;
+      virtual HRESULT __stdcall raw_EnterSubReport (
+        /*[in]*/ BSTR SubReportName ) = 0;
+};
+
+enum tagGRSelectionObjectType
+{
+    grdssReport = 1,
+    grdssPageHeader = 2,
+    grdssPageFooter = 3,
+    grdssReportHeader = 4,
+    grdssReportFooter = 5,
+    grdssControl = 6,
+    grdssDetailGrid = 8,
+    grdssColumn = 9,
+    grdssColumnContentCell = 10,
+    grdssColumnTitleCell = 11,
+    grdssColumnContent = 12,
+    grdssColumnTitle = 13,
+    grdssGroup = 14,
+    grdssGroupHeader = 15,
+    grdssGroupFooter = 16,
+    grdssCrossTab = 20,
+    grdssRecordset = 17,
+    grdssField = 18,
+    grdssParameter = 19,
+    grdssChartAxis = 30,
+    grdssChartSeries = 31,
+    grdssFreeGridColumn = 51,
+    grdssFreeGridRow = 52,
+    grdssFreeGridCell = 53
+};
+
+struct __declspec(uuid("ec401193-3d0a-417e-a13e-30026ab198bf"))
+DesignerProps;
+    // [ default ] interface IUnknown
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_grdes6Lib =
+    {0xc5a16330,0xa084,0x48c9,{0xbc,0x0f,0x0d,0x0b,0x37,0xa1,0x41,0x23}};
+extern "C" const GUID __declspec(selectany) DIID__IGRDesignerEvents =
+    {0xb89f92f4,0x5e58,0x413e,{0x8e,0x73,0x4a,0x0b,0x28,0xb9,0xe9,0xbf}};
+extern "C" const GUID __declspec(selectany) CLSID_GRDesigner =
+    {0x6edd80cb,0x9f08,0x4c71,{0xb4,0x06,0x47,0x9e,0x5c,0xb8,0x0f,0xce}};
+extern "C" const GUID __declspec(selectany) IID_IGRDesigner =
+    {0x283cdc73,0x0d7c,0x4cd9,{0x9f,0xe1,0x75,0xb7,0x91,0x9e,0xf8,0x9a}};
+extern "C" const GUID __declspec(selectany) CLSID_DesignerProps =
+    {0xec401193,0x3d0a,0x417e,{0xa1,0x3e,0x30,0x02,0x6a,0xb1,0x98,0xbf}};
+
+//
+// Wrapper method implementations
+//
+
+#include "f:\w\vs2017\amaze\shipyy\x64\release\grdes.tli"
+
+#pragma pack(pop)
